@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Formulario</title>
+  </head>
+  <body>
+  	<center>
+			<h1>Registar votos</h1>
+      <a  href="index.html" >Regresar a la lista de candidatos</a>
+      <form action="">
+      	<fieldset>
+      		<legend>Formulario de regisro</legend>
+          <select>
+            <option value="" selected>Seleccione un candidato</option>
+          	<option value="candidato1">Gustavo Petro</option>
+          	<option value="candidato2">Oscar Iván Zuluaga</option>
+          	<option value="candidato3">Rodolfo Hernández</option>
+          	<option value="candidato4">Sergio Fajardo</option>
+          </select> <br /><br />
+       
+          <input type="text" list="items" placeholder="Selecione región"/>
+          <datalist id="items">
+          	<option value="Caribe">Caribe</option>
+          	<option value="Pacífico">Pacífico</option>
+          	<option value="Insular">Insular</option>
+          	<option value="Orinoquía">Orinoquía</option>
+          	<option value="Amazonía">Amazonía</option>
+          	<option value="Andina">Andina</option>
+          </datalist><br /><br />
+          <input type="number" placeholder="Número de votos"/><br /><br />
+          <input type="submit" />
+      	</fieldset>
+      </form>
+  	</center>
+  </body>
+  </html> 

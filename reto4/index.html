@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <title>Reto 4</title>
+</head>
+<body>
+    <h1>Registro de Votos</h1>
+    <main>
+        <section class="container-candit">
+            <article class="container-card">
+                <div class="candidato_card">
+                    <h3>Candidato1</h3>
+                    <img class="candidato-img" src="https://www.reporterosasociados.com.co/wp/wp-content/uploads/2020/02/Gustavo-Petro.jpg" alt="">
+                    <button class="candidato-btn" onclick="votar('1')">Votar</button>
+                </div>
+                <p class="conteoLbl"></p>
+            </article>
+            <article class="container-card">
+                <div class="candidato_card">
+                    <h3>Candidato2</h3>
+                    <img class="candidato-img" src="https://www.protagonista.com.co/wp-content/uploads/2019/09/Sergio-Fajardo.jpg" alt="">
+                    <button class="candidato-btn" onclick="votar('2')">Votar</button>
+                </div>
+                <p class="conteoLbl"></p>
+            </article>
+            <article class="container-card">
+                <div class="candidato_card">
+                    <h3>Candidato3</h3>
+                    <img class="candidato-img" src="https://pbs.twimg.com/profile_images/996539767041986561/xSjJrWRJ_400x400.jpg" alt="">
+                    <button class="candidato-btn" onclick="votar('3')">Votar</button>
+                </div>
+                <p class="conteoLbl"></p>
+            </article>
+            <article class="container-card">
+                <div class="candidato_card">
+                    <h3>Candidato4</h3>
+                    <img class="candidato-img" src="https://pbs.twimg.com/profile_images/1411326684666675201/zAMDIZUq.jpg" alt="">
+                    <button class="candidato-btn" onclick="votar('4')">Votar</button>
+                </div>
+                <p class="conteoLbl"></p>
+            </article>
+        </section>
+        <button class="final-btn" onclick="mostrar()">Finalizar Votación</button>
+    </main>
+        <h2>Resultados</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Candidato1</th>
+                    <th>Candidato2</th>
+                    <th>Candidato3</th>
+                    <th>Candidato4</th>
+                    <th>Total votos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    <script src="main.js"></script>
+</body>
+</html>

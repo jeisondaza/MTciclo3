@@ -1,0 +1,83 @@
+:root{
+    --font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    position: relative;
+    font-family: var(--font-family);
+}
+.home{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    align-items: flex-end;
+}
+.home img{
+    height: 100%;
+    min-width: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(0.6);
+}
+.home h1{
+    padding-left: 5rem;
+    color: white;
+    font-weight: bold;
+    font-size: 6rem;
+    margin-bottom: 15rem;
+}
+/* Estilos barra menú */
+.links{
+    padding: 1.5rem;
+    top: 0;
+    position: sticky;
+    background-color: black;
+}
+.links ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.links a{
+    font-size: 2.5rem;
+    color: white;
+    text-decoration: none;
+}
+/* Estilos candidatos */
+.candidatos{
+    margin-top: 3rem;
+    padding-inline: 6rem;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 3rem;
+}
+.candidatos article{
+    text-align: center;
+    width: 40rem;
+    height: 60rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 10px rgba(32, 32, 32, 0.76);
+    padding: 2rem;
+}
+.candidatos article:hover{
+    box-shadow: 0 10px 10px 10px rgba(32, 32, 32, 0.76);
+}
+.candidatos h3{
+    font-size: 2rem;
+}
+.candidatos img{
+    border-radius: 15px;
+    margin-block: 1.5rem;
+}
+.candidatos p{
+    font-size: 1.5rem;
+}
