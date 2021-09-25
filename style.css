@@ -1,0 +1,89 @@
+:root{
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #e1e3e6;
+}
+
+/* Home's Styles */
+.home{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.home__img{
+    width: 100%;
+}
+.home h1{
+    text-align: center;
+    margin-block-start: 11rem;
+    font-weight: 900;
+    font-size: 7rem;
+}
+
+/* Sprints's Styles */
+.sprints{
+    height: 68rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+.card{
+    height: 20rem;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;;
+    color: black;
+    box-shadow: 0 5px 10px rgba(44, 43, 43, 0.733);
+}
+.card__img{
+    width: 100px;
+    height: 100px;
+}
+.card__text{
+    height: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1.2rem;
+}
+.btn{
+    padding: 0.6rem 1.1rem;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.card__buttons{
+}
+.card__demo{
+margin-inline-end: 1rem;
+background-color:#0544a3;
+color: white;
+}
+.card__code{
+    color: #0544a3;
+    border: 1px solid #0544a3;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+    background-color: black;
+}
+.footer__text{
+    font-size: 1.3rem;
+    color: white;
+}
