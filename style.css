@@ -1,5 +1,7 @@
 :root{
     font-size: 62.5%;
+    --colorPri: rgb(216, 21, 63);
+    --colorTitles: white;
 }
 *{
     margin: 0;
@@ -7,7 +9,9 @@
     font-family: 'Roboto', sans-serif;
 }
 body{
-    background-color: #e1e3e6;
+    background: linear-gradient(90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, #356bbd);
+	background-size: 400% 400%;
+	animation: gradient 25s ease infinite;
 }
 
 /* Home's Styles */
@@ -24,6 +28,7 @@ body{
     margin-block-start: 11rem;
     font-weight: 900;
     font-size: 7rem;
+    color: var(--colorTitles);
 }
 
 /* Sprints's Styles */
@@ -36,6 +41,7 @@ body{
 }
 h2{
     font-size: 2.5rem;
+    color: var(--colorTitles);
 }
 .card{
     height: 20rem;
@@ -44,7 +50,7 @@ h2{
     display: flex;
     align-items: center;;
     color: black;
-    box-shadow: 0 5px 10px rgba(44, 43, 43, 0.733);
+    box-shadow: 0 7px 5px rgba(44, 43, 43, 0.856);
 }
 .card__img{
     width: 100px;
@@ -64,17 +70,16 @@ h2{
     border-radius: 5px;
     text-decoration: none;
 }
-.card__buttons{
-}
 .card__demo{
 margin-inline-end: 1rem;
-background-color:#0544a3;
+background-color: var(--colorPri);
 color: white;
 }
 .card__code{
-    color: #0544a3;
-    border: 1px solid #0544a3;
+    color:  var(--colorPri);
+    border: 1px solid  var(--colorPri);
 }
+
 footer{
     display: flex;
     flex-direction: column;
@@ -86,4 +91,44 @@ footer{
 .footer__text{
     font-size: 1.3rem;
     color: white;
+}
+
+/* Desktop screen */
+@media screen and (min-width:700px){
+    .home h1{
+        text-align: center;
+        margin-block-start: 6rem;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    .sprints{
+        margin: 0 auto;
+        width: 65%;
+        height: 70rem;
+    }
+    .card{
+        transition: box-shadow 0.5s;
+    }
+    .card:hover{
+        box-shadow: 0 7px 5px 2.5px rgba(44, 43, 43, 0.973);
+    }
+    .card__img{
+        width: 150px;
+        height: 150px;
+    }
+    .card__text{
+        justify-content: space-evenly;
+        font-size: 1.5rem;
+    }
+    .btn{
+        padding: 0.8rem 1.3rem;
+        font-size: 1.5rem;
+    }
+}
+
+@keyframes gradient {
+	0% {background-position: 0% 50%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 0% 50%}
 }
