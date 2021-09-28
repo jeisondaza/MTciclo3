@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Reto</title>
+    <title>Reto 4</title>
 </head>
 <body>
     <h1 class="title titlePrincipal">PUESTO DE VOTACIÓN #1</h1>
@@ -46,7 +46,9 @@
             <p class="card__count"></p>
         </article>
     </section>
-    <button class="finalBtn" onclick="redBtn()">Finalizar Votación</button> 
+    <div class="container__btn">
+        <button class="finalBtn" onclick="redBtn()">Finalizar Votación</button> 
+    </div>
     <section class="table__container">
         <h2 class="title titleTable">Tabla de resultados</h2>
         <table class="table">
@@ -61,11 +63,11 @@
             </thead>
             <tbody class="table__body">
                 <tr>
-                    <td class="cell"></td>
-                    <td class="cell"></td>
-                    <td class="cell"></td>
-                    <td class="cell"></td>
-                    <td class="cell"></td>
+                    <td class="cell" data-th="Candidato 1 "></td>
+                    <td class="cell" data-th="Candidato 2 "></td>
+                    <td class="cell" data-th="Candidato 3 "></td>
+                    <td class="cell" data-th="Candidato 4 "></td>
+                    <td class="cell" data-th="Total"></td>
                 </tr>
             </tbody>
         </table>

@@ -52,20 +52,20 @@ body{
     font-size: 30px;
     text-align: center;
 }
-
+.container__btn{
+    display: flex;
+    justify-content: center;
+}
 .finalBtn{
+    margin: 50px auto;
     cursor: pointer;
-    font-size: 28px;
-    margin-top: 50px;
-    margin-left: 500px;
-    width: 400px;
+    font-size: 30px;
     padding: 20px 70px;
     color: red;
     border: 2px solid red;
     border-radius: 10px;
     background-color: var(--colorFondo);;
     transition: all 0.3s;
-
 }
 .finalBtn:hover{
     color: white;
@@ -97,4 +97,65 @@ text-align: center;
 }
 .titleTable{
     font-size: 35px;
+}
+
+@media screen and (max-width: 426px) {
+    .card__section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+    .card{  
+        width: 280px;
+        box-shadow: 0 7px 10px rgb(0, 0, 0);
+        border-radius: 10px;
+        transition: box-shadow 0.3s;
+    }
+    .title{
+        margin-left: 0px;
+        margin-block: 25px;
+    }
+    .titlePrincipal{
+        font-size: 50px;
+    }
+    .titleTable{
+        font-size: 25px;
+    }
+    .finalBtn{
+        cursor: pointer;
+        font-size: 18px;
+        margin: 25px auto;
+        width: 300px;
+        padding: 20px 70px;
+        color: red;
+        border: 2px solid red;
+        border-radius: 10px;
+        background-color: var(--colorFondo);;
+        transition: all 0.3s;
+    }
+    .table{
+        border-collapse: collapse;
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .table_header {
+        display: none;
+    }
+    .cell {
+        margin-bottom: 10px;
+        display: block;
+        text-align:center;
+    }
+    .cell:before {
+        font-weight: bold;
+        padding: 10px 0px;
+        color: white;
+        background-color: #273b47;
+        content: attr(data-th);
+        display: block;
+        text-align:center;
+    }
 }
