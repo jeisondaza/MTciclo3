@@ -1,6 +1,11 @@
-let finalCount = document.getElementsByClassName('cell');
-let conteo = document.getElementsByClassName('card__count')
+let finalCount = getNodos('cell');
+let conteo = getNodos('card__count');
 let votos = [0, 0, 0, 0];
+
+function getNodos(selector) {
+    let nodos = document.getElementsByClassName(selector)
+    return nodos;
+}
 
 function votar(params) {
     switch (params) {
