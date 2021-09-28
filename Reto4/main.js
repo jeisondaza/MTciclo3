@@ -11,7 +11,7 @@ function votar(params) {
     switch (params) {
         case '1':
             votos[0]++
-            conteo[0].innerHTML = votos[0];
+            conteo[0].textContent = votos[0];
             break;
         case '2':
             votos[1]++

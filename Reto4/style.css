@@ -15,9 +15,6 @@ body{
     height: 450px;
 }
 
-.card__container{
-    
-}
 .card{
     background-color: var(--colorTabla);
     text-align: center;
@@ -33,6 +30,7 @@ body{
     box-shadow: 0 7px 10px 5px rgb(0, 0, 0);
 }
 .card__img{
+    object-fit: cover;
     width: 100%;
     height: 250px;
 }
