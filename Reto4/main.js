@@ -28,12 +28,12 @@ function votar(params) {
     }
 }
 
+total = () => votos.reduce((p, e) => p + e);
 
 function redBtn(){
-    let total = votos.reduce((p, e) => p + e);
     for (let i = 0; i < votos.length; i++) {
-        let porcentaje = votos[i] / total * 100;
+        let porcentaje = votos[i] / total() * 100;
         finalCount[i].innerHTML = `${votos[i]} (${porcentaje.toFixed(2)})%`;
     }
-    finalCount[4].innerHTML = total;
+    finalCount[4].innerHTML = total();
 }
